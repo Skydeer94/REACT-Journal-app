@@ -1,5 +1,5 @@
 import { loginWithEmailPassword, logoutFirebase, registerUserWithEmailPassword, singInWithGoogle } from '../../firebase/providers';
-import { clearNotesLogout } from '../journal/journalSlice';
+import { clearNotesLogout } from '../journal';
 import { checkingCredentials, login, logout } from './authSlice';
 
 export const checkingAuthentication = ( email, password ) => {
