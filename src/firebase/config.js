@@ -9,6 +9,7 @@ import { getEnvironments } from '../helpers/getEnvironments';
 
 // Your web app's Firebase configuration
 
+
 const {
   VITE_APIKEY,
   VITE_AUTHDOMAIN,
@@ -27,6 +28,8 @@ const firebaseConfig = {
   messagingSenderId: VITE_MESSAGINGSENDERID,
   appId: VITE_APPID,
 };
+
+
 // Initialize Firebase
 
  export const FirebaseApp   = initializeApp( firebaseConfig );

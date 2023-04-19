@@ -1,6 +1,7 @@
 // En caso de necesitar la implementación del FetchAPI
 import 'whatwg-fetch'; // <-- yarn add whatwg-fetch
-// import 'setimmediate';
+import 'setimmediate';
+
 
 
 require('dotenv').config({
@@ -10,3 +11,4 @@ require('dotenv').config({
 jest.mock('./src/helpers/getEnvironments', () => ({
     getEnvironments: () => ({ ...process.env })
 }));
+
